@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Blog</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Blog</h1>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+        </nav>
+        <h1>Blog</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="post1.html">First Post</a></li>
-            <li><a href="post2.html">Second Post</a></li>
+    <main>
+        <ul class="post-list">
+            <li><span class="post-date">28.06.2020</span><a href="post1.html">Post 2</a></li>
+            <li><span class="post-date">26.06.2020</span><a href="post2.html">Post 1</a></li>
+            <!-- Add more posts as needed -->
         </ul>
-    </nav>
-    <section>
-        <p>This is the homepage of my simple blog. Here you can find all my posts!</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 My Simple Blog</p>
-    </footer>
+    </main>
 </body>
 </html>
