@@ -17,55 +17,54 @@
     </header>
     <main>
         <article>
-                <h1>My Transition from Game Development to New Projects</h1>
-                <p>Since I've moved away from working on game-related projects, I thought it would be great to start sharing some of the other things I've been working on. As I'm transitioning into a new domain, there's been a lot of day-to-day learning happening behind the scenes. This shift has also made me think about how to learn more efficiently. For the most part, I've adopted a project-based approach, specifically focusing on bite-sized projects to keep the momentum going and avoid getting stuck in a slump.</p>
-                
-                <p>The first major step I took was switching from Windows to Linux as my primary operating system. I initially started with Ubuntu but quickly switched to Fedora. Although I encountered some issues with Nvidia drivers on both Fedora and Ubuntu, I managed to resolve them on Fedora, and I've been very happy with it since. Fedora rocks!</p>
-                
-                <p>Next, I decided to challenge myself by using the command line for most tasks. It turns out that Linux is inherently built around the command line, making it a much more straightforward experience compared to Windows. Fast forward two months, and I've gone from avoiding the command line entirely to using it every day. In fact, it’s now my preferred way of handling most tasks on Linux. Who would have thought?</p>
-                
-                <p>For networking, I'm following guides for the CompTIA Network+ certification and using Udemy courses along with <em>How Linux Works</em> by Brian Ward for Linux-related learning. But, of course, knowledge is only valuable if applied in real projects. Here’s a rundown of what I've accomplished so far, starting from the easiest and moving toward more involved projects:</p>
-
-                <ul>
-                    <li>
-                        <strong>Set up a basic firewall (UFW):</strong> True to its name, UFW (Uncomplicated Firewall) is indeed uncomplicated. You just turn it on, and it works. While it can be configured for more specific needs, the basic settings work well for the average user.
-                        <ul>
-                            <li><strong>Troubleshooting:</strong> I only made a few tweaks—changing the logging level from low to mid and enabling it to start on boot (it doesn’t by default).</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Packet capturing with Wireshark:</strong> I spent some time getting familiar with Wireshark, exploring what it can do. It's a powerful tool for peeking inside IP packets and seeing the TCP/IP model in action.
-                    </li>
-                    <li>
-                        <strong>Set up a basic "Hello" webpage using Apache:</strong> This was straightforward—I followed the instructions from ChatGPT and browsed the documentation. Right now, it’s only accessible through my private IP address. I considered hosting it publicly, but that would require proper security measures, which is a whole other project.
-                    </li>
-                    <li>
-                        <strong>Set up a separate local network for homelabbing:</strong> I picked up an extra TP-Link router during Prime Day specifically for this purpose. Now I have a dedicated local network to experiment with.
-                        <ul>
-                            <li><strong>Troubleshooting:</strong> Modern routers generally work out of the box, so all I did was change my new router’s gateway from 192.168.0.1 to 192.168.1.1 to avoid overlap with my existing network.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Turning a Raspberry Pi into a NAS:</strong> This felt like my first real project, and it took a few days to get it working. But once it did, it was incredibly rewarding. NAS stands for Network Attached Storage, and while they can cost hundreds of dollars on Amazon, I’ve always wanted to tinker with Raspberry Pis. Setting up a NAS was even listed as one of the recommended projects on their website.
-                        <ul>
-                            <li><strong>Troubleshooting:</strong> I faced quite a few challenges at first. The microSD card that came with the kit was faulty, leading to fatal errors when trying to install anything. Fortunately, my habit of hoarding USB drives saved the day. Another challenge was that my local network isn’t connected to the internet (by design), so I had to learn about SSH tunnels, proxies, and other new-to-me concepts to update my Fedora installation. Now, everything is working perfectly, and I can access my NAS from all my local devices. The only downside is that I don’t have much to store on it yet.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h2>Some random housekeeping tasks I tackled:</h2>
-                <ul>
-                    <li>Set up automatic backups of my Obsidian notes to Google Drive using rclone and systemd timers.</li>
-                    <li>Created an encrypted database for my passwords using SQLCipher and SQLite.</li>
-                </ul>
-
-                <p>I’m actively interested in automation, and for now, I’m focusing on automating tasks that are immediately useful to me—though I’m only doing this on weekends. 😄</p>
-
-                <h2>Upcoming projects:</h2>
-                <ul>
-                    <li>Setting up a VPN using Outline (I’m currently trying out a VPS from Hetzner—not sponsored).</li>
-                    <li>Learning more about SQLite and Apache/web development through mini projects like a book tracker.</li>
-                </ul>
+                <h1>Project Updates</h1>
+    <p>
+        Since I don’t work on any game-related stuff anymore, I thought I’d start sharing other things I’ve been working on. As I’m trying to change domains, there is quite a bit of day-to-day learning happening behind the scenes, which also made me think about how to learn efficiently, etc. For the most part, I’m going with the project-based approach, specifically a bite-sized project-based approach to keep things moving and not end up in a slump.
+    </p>
+    <p>
+        Anyway, the first thing I did was switch from Windows to Linux as my primary machine. I started with Ubuntu but switched to Fedora early on. I had issues with Nvidia drivers on both Fedora and Ubuntu, but I managed to solve them on Fedora, and hence, I stuck with it. I’m very happy with it now. Fedora rocks.
+    </p>
+    <p>
+        The second thing I thought I’d do was to force myself to use the command line for most things. It turns out Linux is simply built around the command line, and it’s a much more straightforward experience than on Windows. So at this point, two months later, I went from using no command line to using it every day. In fact, it’s my preferred way to do most stuff on Linux. Yeah, weird.
+    </p>
+    <p>
+        For learning networking, I’m using the guides for CompTIA Network+ and for Linux, some Udemy courses and <em>How Linux Works</em> by Brian Ward. But of course, none of that is worth much unless you apply it in projects. Here’s what I’ve done so far, starting from the easiest to more involved:
+    </p>
+    <ul>
+        <li>
+            <strong>Set up a basic firewall:</strong> UFW in my case, which stands for Uncomplicated Firewall. True to its name, it’s indeed uncomplicated. You just turn it on, and it works. It can be configured for one’s needs, but basic settings work for the average user.
+            <br><em>Troubleshooting:</em> Not much, I changed the logging from low to mid and enabled it to start on boot (it doesn’t by default).
+        </li>
+        <li>
+            <strong>Capturing packets with Wireshark:</strong> I spent some time familiarizing myself with Wireshark and what it can do since it might come in handy eventually. It’s a great tool to peek inside IP packets and see the TCP/IP model in action.
+        </li>
+        <li>
+            <strong>Set up a basic "Hello" webpage using Apache:</strong> Not much to it—just followed the instructions from ChatGPT and browsed the docs. Right now, it’s only accessible through my private IP address. I was looking into hosting it publicly, but this goes beyond a basic project as you need to know how to secure it properly, and that’s a whole other project entirely.
+        </li>
+        <li>
+            <strong>Set up a separate local network for homelabbing:</strong> I got an extra TP-Link router on Prime Day specifically for that purpose. Now I have a local network I can play around with.
+            <br><em>Troubleshooting:</em> Routers nowadays work out of the box, so the only thing I did was change my new router’s gateway from 192.168.0.1 to 1.1 so it doesn’t overlap with the other one.
+        </li>
+        <li>
+            <strong>Turning Raspberry Pi into a NAS:</strong> This felt like an actual project, and it took me a few days to get it to work, but once I did, it felt great. NAS stands for Network Attached Storage, and on Amazon, they cost hundreds of bucks. But I’ve wanted to tinker with Raspberry Pis for a while now, and NAS is one of the projects they even have listed on their website.
+            <br><em>Troubleshooting:</em> There was a lot initially. It turned out the microSD card that came with the kit was faulty, which resulted in fatal errors when trying to apt install anything. Thankfully, I’m a USB hoarder, so all the issues were solved after I switched. Another issue was that my local network is not connected to the internet (intentionally), and I had to look into SSH tunnels and using a proxy to redirect traffic and all that new-to-me stuff so I could update through my Fedora. Then into Samba and Avahi for mDNSing, but it’s all done and working and accessible through all of my local devices. The only issue is that I don't have much to store there for now.
+        </li>
+    </ul>
+    <p>
+        Some random stuff I did for housekeeping:
+    </p>
+    <ul>
+        <li>Set up automatic backup of my Obsidian notes with rclone and systemd timer to Google Drive.</li>
+        <li>Made an encrypted database for my passwords using SQLCipher and SQLite.</li>
+    </ul>
+    <p>
+        I have an active interest in automation, but for now, I also work on automating stuff that can be immediately useful to me. And I only do it on weekends. :D
+    </p>
+    <h2>My Next Projects:</h2>
+    <ul>
+        <li>Set up a VPN using Outline (I’m trying a VPS from Hetzner right now, not sponsored.)</li>
+        <li>Learn more SQLite and Apache/web stuff through mini projects like BookTracker, etc.</li>
+    </ul>
             </article>
     </main>
 </div>
