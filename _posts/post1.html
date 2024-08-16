@@ -17,10 +17,56 @@
     </header>
     <main>
         <article>
-            <h1>Abusing chromium headless as a test runner</h1>
-            <p><span class="post-date">15.08.2024</span></p>
-            <p>Testing is crucial for any software project. In this post, I explore how to leverage Chromium's headless mode for running automated tests...</p>
-        </article>
+                <h1>My Transition from Game Development to New Projects</h1>
+                <p>Since I've moved away from working on game-related projects, I thought it would be great to start sharing some of the other things I've been working on. As I'm transitioning into a new domain, there's been a lot of day-to-day learning happening behind the scenes. This shift has also made me think about how to learn more efficiently. For the most part, I've adopted a project-based approach, specifically focusing on bite-sized projects to keep the momentum going and avoid getting stuck in a slump.</p>
+                
+                <p>The first major step I took was switching from Windows to Linux as my primary operating system. I initially started with Ubuntu but quickly switched to Fedora. Although I encountered some issues with Nvidia drivers on both Fedora and Ubuntu, I managed to resolve them on Fedora, and I've been very happy with it since. Fedora rocks!</p>
+                
+                <p>Next, I decided to challenge myself by using the command line for most tasks. It turns out that Linux is inherently built around the command line, making it a much more straightforward experience compared to Windows. Fast forward two months, and I've gone from avoiding the command line entirely to using it every day. In fact, it’s now my preferred way of handling most tasks on Linux. Who would have thought?</p>
+                
+                <p>For networking, I'm following guides for the CompTIA Network+ certification and using Udemy courses along with <em>How Linux Works</em> by Brian Ward for Linux-related learning. But, of course, knowledge is only valuable if applied in real projects. Here’s a rundown of what I've accomplished so far, starting from the easiest and moving toward more involved projects:</p>
+
+                <ul>
+                    <li>
+                        <strong>Set up a basic firewall (UFW):</strong> True to its name, UFW (Uncomplicated Firewall) is indeed uncomplicated. You just turn it on, and it works. While it can be configured for more specific needs, the basic settings work well for the average user.
+                        <ul>
+                            <li><strong>Troubleshooting:</strong> I only made a few tweaks—changing the logging level from low to mid and enabling it to start on boot (it doesn’t by default).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Packet capturing with Wireshark:</strong> I spent some time getting familiar with Wireshark, exploring what it can do. It's a powerful tool for peeking inside IP packets and seeing the TCP/IP model in action.
+                    </li>
+                    <li>
+                        <strong>Set up a basic "Hello" webpage using Apache:</strong> This was straightforward—I followed the instructions from ChatGPT and browsed the documentation. Right now, it’s only accessible through my private IP address. I considered hosting it publicly, but that would require proper security measures, which is a whole other project.
+                    </li>
+                    <li>
+                        <strong>Set up a separate local network for homelabbing:</strong> I picked up an extra TP-Link router during Prime Day specifically for this purpose. Now I have a dedicated local network to experiment with.
+                        <ul>
+                            <li><strong>Troubleshooting:</strong> Modern routers generally work out of the box, so all I did was change my new router’s gateway from 192.168.0.1 to 192.168.1.1 to avoid overlap with my existing network.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Turning a Raspberry Pi into a NAS:</strong> This felt like my first real project, and it took a few days to get it working. But once it did, it was incredibly rewarding. NAS stands for Network Attached Storage, and while they can cost hundreds of dollars on Amazon, I’ve always wanted to tinker with Raspberry Pis. Setting up a NAS was even listed as one of the recommended projects on their website.
+                        <ul>
+                            <li><strong>Troubleshooting:</strong> I faced quite a few challenges at first. The microSD card that came with the kit was faulty, leading to fatal errors when trying to install anything. Fortunately, my habit of hoarding USB drives saved the day. Another challenge was that my local network isn’t connected to the internet (by design), so I had to learn about SSH tunnels, proxies, and other new-to-me concepts to update my Fedora installation. Now, everything is working perfectly, and I can access my NAS from all my local devices. The only downside is that I don’t have much to store on it yet.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>Some random housekeeping tasks I tackled:</h2>
+                <ul>
+                    <li>Set up automatic backups of my Obsidian notes to Google Drive using rclone and systemd timers.</li>
+                    <li>Created an encrypted database for my passwords using SQLCipher and SQLite.</li>
+                </ul>
+
+                <p>I’m actively interested in automation, and for now, I’m focusing on automating tasks that are immediately useful to me—though I’m only doing this on weekends. 😄</p>
+
+                <h2>Upcoming projects:</h2>
+                <ul>
+                    <li>Setting up a VPN using Outline (I’m currently trying out a VPS from Hetzner—not sponsored).</li>
+                    <li>Learning more about SQLite and Apache/web development through mini projects like a book tracker.</li>
+                </ul>
+            </article>
     </main>
 </div>
 </body>
